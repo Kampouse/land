@@ -12,7 +12,7 @@ export default component$(() => {
   });
   return (
     <>
-      <header class="flex flex-col items-center justify-center  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img  md:h-[20em] lg:h-[25em]    ">
+      <header class="flex flex-col items-center justify-center  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img h-[12em] md:h-[20em] lg:h-[25em]    ">
         
         <div
           onClick$={() => setName()}
@@ -29,7 +29,7 @@ export default component$(() => {
             </h1>
           )}
         </div>
-<h1 class=" text-2xl md:text-5xl lg:text-5xl font-medium tracking-widest underline decoration-4   bio-Rhyme     bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5">
+<h1 class=" text-2xl md:text-5xl lg:text-5xl  px-5 font-medium tracking-widest underline decoration-4   bio-Rhyme     bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5">
             (good people) {"=>"} great product
           </h1>
       </header>
