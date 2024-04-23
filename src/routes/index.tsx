@@ -33,7 +33,7 @@ export default component$(() => {
             (good people) {"=>"} great product
           </h1>
       </header>
-      <main class=" flex  justify-center bg-gradient-to-b   from-[#221539] to-slate-900  h-screen">
+      <main class=" flex  justify-center bg-gradient-to-b     mt-[4rem]   from-[#221539] to-slate-900  h-screen">
         <div class="flex flex-col">
           
           <div class="flex flex-col   text-white text-left  rounded-xl  gap-5 ">
