@@ -17,7 +17,7 @@ import render from "./entry.ssr";
 
 declare global {
   interface QwikCityPlatform extends PlatformCloudflarePages {
-    env: Env
+    env: Env;
   }
 }
 

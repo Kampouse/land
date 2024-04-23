@@ -1,52 +1,44 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 :root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background:  #21102e;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  --accent: 136, 58, 234;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%
+  );
+}
+html {
+  font-family: system-ui, sans-serif;
+  background: #221539;
+}
+code {
+  font-family:
+    Menlo,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New,
+    monospace;
+}
 
-	.overlay {
-	
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100vh;
-    position: relative;
-	
-	}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  position: relative;
+}
 
-
-
-	   .custom-img {
-	background-image: url('./media/cover.jpg');
-  }
+.custom-img {
+  background-image: url("./media/cover.jpg");
+}
 
 .pacifico-regular {
   font-family: "Pacifico", cursive;
@@ -55,10 +47,6 @@
 }
 
 .bio-Rhyme {
-
-font-family: Cagliostro;
-line-height:2em;
-
-
-
+  font-family: Cagliostro;
+  line-height: 2em;
 }
