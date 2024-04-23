@@ -1,12 +1,37 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, $, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+
+
+
 export default component$(() => {
+const  userName = useSignal("jemartel")
+const setName = $(()=>{
+
+        if(userName.value == "jemartel") {
+              userName.value = "jean-philippe martel"
+        }
+        else {
+              userName.value = "jemartel"
+
+        }
+    });
   return (
     <>
       <header class="flex items-center justify-center  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img h-[25em]    ">
-        <div class=" flex justify-center  p-10  text-4xl  font-bold   from-zinc-50 to-gray-800  text-white bg-[#221539]  opacity-[65%] rounded-xl">
-          <h2 class="   font-display text-4xl"> hello i am jemartel ~ </h2>
+        <div onClick$={()=> setName()} class="   cursor-pointer flex justify-center  p-10  text-4xl  font-bold   from-zinc-50 to-gray-800  text-white bg-[#221539]  opacity-[65%] rounded-xl">
+        
+
+        {userName.value  ==  "jemartel" ?
+
+          <h2 class="  typed-out  font-display text-4xl underline"> hello i am {userName} ~ </h2> : <h1 class="   typed-out  font-display text-4xl underline">
+          am actual     {userName} ~
+          </h1> }  
+  
+  
+  
+  
+  
         </div>
       </header>
 
@@ -24,8 +49,6 @@ export default component$(() => {
               the heights of clowning around with the
               latest  web technologies
             </p>
-
-
             <hr class=" h-px my-2 bg-gray-800 border-0 d"></hr>
 
 
