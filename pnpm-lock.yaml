@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  lucide-qwik:
+    specifier: ^1.0.0
+    version: 1.0.0
+
 devDependencies:
   '@builder.io/qwik':
     specifier: ^1.4.5
@@ -2861,6 +2866,11 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /lucide-qwik@1.0.0:
+    resolution: {integrity: sha512-AEcUfXOiXL4/MWf2kz/MPdjs2ydveetJ5szziFsb0kWhXQbJpXLg9xI9oOtuse0gxf0QiQswNhiAnm3Dv2PO6A==}
+    engines: {node: '>=15.0.0'}
+    dev: false
 
   /magic-string@0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}

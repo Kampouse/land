@@ -1,0 +1,34 @@
+.charlie {
+    position: relative;
+    font-size: 1.5em;
+    height: 1em;
+    border: 0;
+    -webkit-filter: drop-shadow(hsla(0, 0%, 0%, 0.75) 1px 3px 5px);
+    width: 75%;
+}
+
+.charlie:before,
+.charlie:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: 1em 100%;
+    height: inherit;
+}
+
+.charlie:before {
+    background-image:
+        linear-gradient(315deg, hsla(0, 0%, 0%, 0.75) 25%, transparent 25%),
+        linear-gradient(45deg, hsla(0, 0%, 0%, 0.75) 25%, transparent 25%);
+    background-position: 50%;
+    top: -0.5em;
+}
+
+.charlie:after {
+    background-image:
+        linear-gradient(135deg, hsla(0, 0%, 0%, 0.75) 25%, transparent 25%),
+        linear-gradient(225deg, hsla(0, 0%, 0%, 0.75) 25%, transparent 25%);
+    background-position: -webkit-calc(50% - 0.5em);
+    top: 0.5em;
+}

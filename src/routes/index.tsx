@@ -1,6 +1,6 @@
 import { component$, $, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-
+import * as  lucid from "lucide-qwik";
 export default component$(() => {
   const userName = useSignal("jemartel");
   const setName = $(() => {
@@ -42,28 +42,92 @@ export default component$(() => {
               from the depths of system programming to <br />
               the heights of clowning around with the latest web technologies
             </p>
-            <hr class=" h-px my-5 bg-gray-800 border-0  "></hr>
-            <div class="flex  justify-center  ">
-              <button class=" border border-red-50   w-fit p-2    rounded-2xl ">
-                <a
-                  class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
-                  target="_blank"
-                  href="vercel.lol">
+            <hr class=" h-px my-5 bg-gray-800 border-0 flex w-full "></hr>
+            <div class="flex  justify-center w-screen ">
+            </div>
+            <div class="flex justify-center m-5">
+              <div class="flex flex-col gap-2 justify-center w-full">
+                <div class=" place-self-center">
+                  learn more about me   <lucid.ArrowDownIcon class="inline ml-2" size={20} />
+                </div>
 
-                  what up
-                </a>
-              </button>
+
+                <div class="place-self-center">
+                  <h1> </h1>
+
+                  <button class=" border border-red-50 self-center   m-2 p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
+                    <a
+                      class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/jemartel/"
+                    >
+                      what up {"=>  "}
+                      <lucid.LinkedinIcon class="inline hover:bg-blue" size={20} />
+                    </a>
+
+                  </button>
+
+
+                  <button class=" border border-red-50 self-center   m-2 p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
+                    <a
+                      class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
+                      target="_blank"
+                      href="https://creator.nightcafe.studio/u/Kampouse"
+                    >
+                      creations  {"=>  "}
+                      <lucid.BrushIcon class="inline hover:bg-blue" size={20} />
+                    </a>
+
+                  </button>
+                  <button class=" border border-red-50 self-center    p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
+                    <a
+                      class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/jemartel/"
+                    >
+                      my hub {"=>  "}
+                      <lucid.GithubIcon class="inline hover:bg-blue" size={20} />
+                    </a>
+
+                  </button>
+                  <button class=" border border-red-50 self-center m-2    p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
+                    <a
+                      class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/jemartel/"
+                    >
+                      this website {"=>  "}
+                      <lucid.CodeIcon class="inline hover:bg-blue" size={20} />
+                    </a>
+
+                  </button>
+
+
+
+                </div>
+
+              </div >
+
+
+
+
+
+
+
             </div>
 
           </div>
+
         </div>
+
+
+
       </main>
     </>
   );
-})
+});
 
-
-export const head: DocumentHead = ({ resolveValue, params }) => {
+export const head: DocumentHead = () => {
   return {
     title: "jemartel ~ personal website",
     meta: [
@@ -72,7 +136,5 @@ export const head: DocumentHead = ({ resolveValue, params }) => {
         content: "my personal website ",
       },
     ],
-
-  }
-
-}
+  };
+};
