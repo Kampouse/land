@@ -50,11 +50,8 @@ export default component$(() => {
                 <div class=" place-self-center">
                   learn more about me   <lucid.ArrowDownIcon class="inline ml-2" size={20} />
                 </div>
-
-
                 <div class="place-self-center">
                   <h1> </h1>
-
                   <button class=" border border-red-50 self-center   m-2 p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
                     <a
                       class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
@@ -64,10 +61,7 @@ export default component$(() => {
                       what up {"=>  "}
                       <lucid.LinkedinIcon class="inline hover:bg-blue" size={20} />
                     </a>
-
                   </button>
-
-
                   <button class=" border border-red-50 self-center   m-2 p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
                     <a
                       class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
@@ -83,7 +77,7 @@ export default component$(() => {
                     <a
                       class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
                       target="_blank"
-                      href="https://www.linkedin.com/in/jemartel/"
+                      href="https://www.github.com/kampouse/"
                     >
                       my hub {"=>  "}
                       <lucid.GithubIcon class="inline hover:bg-blue" size={20} />
@@ -94,7 +88,7 @@ export default component$(() => {
                     <a
                       class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
                       target="_blank"
-                      href="https://www.linkedin.com/in/jemartel/"
+                      href="https://www.github.com/kampouse/land"
                     >
                       this website {"=>  "}
                       <lucid.CodeIcon class="inline hover:bg-blue" size={20} />
