@@ -6,56 +6,73 @@ export default component$(() => {
   const setName = $(() => {
     if (userName.value == "jemartel") {
       userName.value = "jean-philippe martel";
+      document.title = "jean-philippe  ~ personal website";
     } else {
       userName.value = "jemartel";
+      document.title = "jemartel ~ personal website";
     }
   });
   return (
     <>
-      <header class="flex flex-col items-center justify-center  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img h-[12em] md:h-[20em] lg:h-[25em]    ">
-        
+      <header class="flex flex-col items-center justify-center  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img    md:h-[20em] lg:h-[25em]    ">
         <div
           onClick$={() => setName()}
-          class="   cursor-pointer flex justify-center  p-10  text-4xl  font-bold   from-zinc-50 to-gray-800  text-white bg-[#221539]  opacity-[65%] rounded-xl"
+          class="   cursor-pointer flex justify-center   p-2 md:p-10 lg:p-10    font-bold   from-zinc-50 to-gray-800  text-white bg-[#221539]  opacity-[65%] rounded-xl"
         >
           {userName.value == "jemartel" ? (
-            <h2 class="  typed-out  font-display text-4xl underline">
+            <h2 class="  typed-out  font-display   underline">
               {" "}
               hello i am {userName} ~{" "}
             </h2>
           ) : (
-            <h1 class="   typed-out  font-display text-4xl underline">
-              am actual {userName} ~
+            <h1 class="   typed-out  font-display  underline">
+              am actualy {userName} ~
             </h1>
           )}
         </div>
-<h1 class=" text-2xl md:text-5xl lg:text-5xl  px-5 font-medium tracking-widest underline decoration-4   bio-Rhyme     bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5">
-            (good people) {"=>"} great product
-          </h1>
+        <h1 class=" text-2xl md:text-5xl lg:text-5xl  px-5 font-medium tracking-widest underline decoration-4   bio-Rhyme     bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5">
+          (good people) {"=>"} great product
+        </h1>
       </header>
-      <main class=" flex  justify-center bg-gradient-to-b     mt-[4rem]   from-[#221539] to-slate-900  h-screen">
+      <main class=" flex  justify-center bg-gradient-to-b md:m-2 lg:m-2        from-[#221539] to-slate-900  ">
         <div class="flex flex-col">
-          
-          <div class="flex flex-col   text-white text-left  rounded-xl  gap-5 ">
+          <div class="flex flex-col      text-white text-left  rounded-xl   ">
             <p class="font-serif text-xl  text-center     text-white ">
               chill Canadian 🇨🇦 <br></br> that enjoy Problem solving <br />
               from the depths of system programming to <br />
               the heights of clowning around with the latest web technologies
             </p>
-            <hr class=" h-px my-2 bg-gray-800 border-0 d"></hr>
+            <hr class=" h-px my-5 bg-gray-800 border-0  "></hr>
+            <div class="flex  justify-center  ">
+              <button class=" border border-red-50   w-fit p-2    rounded-2xl ">
+                <a
+                  class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
+                  target="_blank"
+                  href="vercel.lol">
+
+                  what up
+                </a>
+              </button>
+            </div>
+
           </div>
         </div>
       </main>
     </>
   );
-});
+})
 
-export const head: DocumentHead = {
-  title: "Welcome to Qwik",
-  meta: [
-    {
-      name: "description",
-      content: "Qwik site description",
-    },
-  ],
-};
+
+export const head: DocumentHead = ({ resolveValue, params }) => {
+  return {
+    title: "jemartel ~ personal website",
+    meta: [
+      {
+        name: "description",
+        content: "my personal website ",
+      },
+    ],
+
+  }
+
+}

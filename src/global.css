@@ -55,8 +55,8 @@ code {
   overflow: hidden;
   border-right: 0.15em solid rgb(241, 40, 43);
   white-space: nowrap;
-  font-size: 1.6rem;
   width: 0;
+  font-size: 1.4rem;
   animation: typing 2s forwards;
 }
 @keyframes typing {
@@ -68,7 +68,7 @@ code {
 
   to {
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 
     border-right: 0.5em solid rgb(241, 40, 43);
   }
