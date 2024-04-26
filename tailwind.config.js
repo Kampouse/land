@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#64278C", // Color 1 (dark purple)
+        primary: "#AE40E6", // Color 1 (dark purple)
         secondary: "#4d3967", // Color 2 (dark gray)
         accent: "#8cbee7", // Color 3 (green)
         warning: "#b0671d", // Color 4 (orange)
-        danger: "#bf1719", // Color 5 (red)
+        danger: "#F1232D", // Color 5 (red)
         fortext: "ff8c80",
       },
     },
