@@ -47,75 +47,51 @@ export default component$(() => {
             </div>
             <div class="flex justify-center m-5">
               <div class="flex flex-col gap-2 justify-center w-full">
-                <div class=" place-self-center">
+                <div class=" place-self-center ">
                   learn more about me   <lucid.ArrowDownIcon class="inline ml-2" size={20} />
                 </div>
-                <div class="place-self-center">
+                <div class="place-self-center p-5">
                   <h1> </h1>
-                  <button class=" border border-red-50 self-center   m-2 p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
-                    <a
-                      class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
-                      target="_blank"
-                      href="https://www.linkedin.com/in/jemartel/"
-                    >
-                      what up {"=>  "}
-                      <lucid.LinkedinIcon class="inline hover:bg-blue" size={20} />
-                    </a>
-                  </button>
-                  <button class=" border border-red-50 self-center   m-2 p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
-                    <a
-                      class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
-                      target="_blank"
-                      href="https://creator.nightcafe.studio/u/Kampouse"
-                    >
-                      creations  {"=>  "}
-                      <lucid.BrushIcon class="inline hover:bg-blue" size={20} />
-                    </a>
+                  <a
+                    class="border  border-red-50 self-center   m-2 p-5    w-fit rounded-2xl hover:bg-[#1a74ba] text-white bg-clip-text text-transparent "
+                    target="_blank"
+                    href="https://www.linkedin.com/in/jemartel/"
+                  >
+                    what up {"=>  "}
+                    <lucid.LinkedinIcon class="inline hover:bg-blue" size={20} />
+                  </a>
 
-                  </button>
-                  <button class=" border border-red-50 self-center    p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
-                    <a
-                      class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
-                      target="_blank"
-                      href="https://www.github.com/kampouse/"
-                    >
-                      my hub {"=>  "}
-                      <lucid.GithubIcon class="inline hover:bg-blue" size={20} />
-                    </a>
+                  <a
+                    class="  border border-red-50 self-center   m-2 p-5    w-fit rounded-2xl hover:bg-[#1a74ba]   text-white  bg-gradient-to-r  bg-clip-text text-transparent "
+                    target="_blank"
+                    href="https://creator.nightcafe.studio/u/Kampouse"
+                  >
+                    creations  {"=>  "}
+                    <lucid.BrushIcon class="inline hover:bg-blue" size={20} />
+                  </a>
 
-                  </button>
-                  <button class=" border border-red-50 self-center m-2    p-2    w-fit rounded-2xl hover:bg-[#1a74ba] ">
-                    <a
-                      class="text-white  bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent pt-5"
-                      target="_blank"
-                      href="https://www.github.com/kampouse/land"
-                    >
-                      this website {"=>  "}
-                      <lucid.CodeIcon class="inline hover:bg-blue" size={20} />
-                    </a>
-
-                  </button>
-
-
+                  <a
+                    class="border border-red-50   self-center   m-2 p-5    w-fit rounded-2xl hover:bg-[#1a74ba]   text-white   bg-clip-text text-transparent pt-5"
+                    target="_blank"
+                    href="https://www.github.com/kampouse/"
+                  >
+                    my hub {"=>  "}
+                    <lucid.GithubIcon class="inline hover:bg-blue" size={20} />
+                  </a>
+                  <a
+                    class="text-white align-middle   border border-red-50 self-center m-2    p-5    w-fit rounded-2xl hover:bg-[#1a74ba]   bg-clip-text text-transparent"
+                    target="_blank"
+                    href="https://www.github.com/kampouse/land"
+                  >
+                    this website {"=>  "}
+                    <lucid.CodeIcon class="inline hover:bg-blue" size={20} />
+                  </a>
 
                 </div>
-
               </div >
-
-
-
-
-
-
-
             </div>
-
           </div>
-
         </div>
-
-
-
       </main>
     </>
   );
