@@ -1,6 +1,7 @@
 import { component$, $, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import * as  lucid from "lucide-qwik";
+import * as lucid from "lucide-qwik";
+import LandingLinks from "~/components/landingButton";
 export default component$(() => {
   const userName = useSignal("jemartel");
   const setName = $(() => {
@@ -43,52 +44,57 @@ export default component$(() => {
               the heights of clowning around with the latest web technologies
             </p>
             <hr class=" h-px my-5 bg-gray-800 border-0 flex w-full "></hr>
-            <div class="flex  justify-center w-screen ">
-            </div>
+            <div class="flex  justify-center w-screen "></div>
             <div class="flex justify-center m-5">
               <div class="flex flex-col gap-2 justify-center w-full">
                 <div class=" place-self-center ">
-                  learn more about me   <lucid.ArrowDownIcon class="inline ml-2" size={20} />
+                  learn more about me{" "}
+                  <lucid.ArrowDownIcon class="inline ml-2" size={20} />
                 </div>
                 <div class="place-self-center p-5">
-                  <h1> </h1>
-                  <a
-                    class="border  border-red-50 self-center   m-2 p-5    w-fit rounded-2xl hover:bg-[#1a74ba] text-white bg-clip-text text-transparent "
-                    target="_blank"
-                    href="https://www.linkedin.com/in/jemartel/"
+                  <LandingLinks
+                    link="https://www.linkedin.com/in/jemartel/"
+                    text="what up  =>"
                   >
-                    what up {"=>  "}
-                    <lucid.LinkedinIcon class="inline hover:bg-blue" size={20} />
-                  </a>
+                    <lucid.LinkedinIcon
+                      q:slot="icon"
+                      class="inline ml-2"
+                      size={20}
+                    />
+                  </LandingLinks>
+                  <LandingLinks
+                    link="https://creator.nightcafe.studio/u/Kampouse"
+                    text="creations  =>"
+                  >
+                    <lucid.BrushIcon
+                      q:slot="icon"
+                      class="inline ml-2"
+                      size={20}
+                    />
+                  </LandingLinks>
 
-                  <a
-                    class="  border border-red-50 self-center   m-2 p-5    w-fit rounded-2xl hover:bg-[#1a74ba]   text-white  bg-gradient-to-r  bg-clip-text text-transparent "
-                    target="_blank"
-                    href="https://creator.nightcafe.studio/u/Kampouse"
+                  <LandingLinks
+                    link="https://www.github.com/kampouse/"
+                    text="my hub =>"
                   >
-                    creations  {"=>  "}
-                    <lucid.BrushIcon class="inline hover:bg-blue" size={20} />
-                  </a>
-
-                  <a
-                    class="border border-red-50   self-center   m-2 p-5    w-fit rounded-2xl hover:bg-[#1a74ba]   text-white   bg-clip-text text-transparent pt-5"
-                    target="_blank"
-                    href="https://www.github.com/kampouse/"
+                    <lucid.GithubIcon
+                      q:slot="icon"
+                      class="inline ml-2"
+                      size={20}
+                    />
+                  </LandingLinks>
+                  <LandingLinks
+                    link="https://www.github.com/kampouse/land"
+                    text=" this website =>"
                   >
-                    my hub {"=>  "}
-                    <lucid.GithubIcon class="inline hover:bg-blue" size={20} />
-                  </a>
-                  <a
-                    class="text-white align-middle   border border-red-50 self-center m-2    p-5    w-fit rounded-2xl hover:bg-[#1a74ba]   bg-clip-text text-transparent"
-                    target="_blank"
-                    href="https://www.github.com/kampouse/land"
-                  >
-                    this website {"=>  "}
-                    <lucid.CodeIcon class="inline hover:bg-blue" size={20} />
-                  </a>
-
+                    <lucid.GithubIcon
+                      q:slot="icon"
+                      class="inline ml-2"
+                      size={20}
+                    />
+                  </LandingLinks>
                 </div>
-              </div >
+              </div>
             </div>
           </div>
         </div>
