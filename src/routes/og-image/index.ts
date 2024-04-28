@@ -31,6 +31,14 @@ export const onGet: RequestHandler<PlatformCloudflarePages> = async ({
       );
     })
     .catch((e) => {
-      send(e);
+      //create a response showing that it could not fetch the font
+      send(
+        new ImageResponse(
+          html`<div tw="text-4xl text-green-700" style="background-color: tan">
+            Hello, world!
+          </div>`,
+          { width: 300, height: 300, fonts: [] },
+        ),
+      );
     });
 };
