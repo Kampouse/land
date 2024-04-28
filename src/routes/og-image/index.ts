@@ -1,8 +1,8 @@
 import type { RequestHandler } from "@builder.io/qwik-city";
 import { fetchFont, ImageResponse, html } from "og-img";
 
-export const onGet: RequestHandler = async (req) => {
-  req.send(
+export const onGet: RequestHandler = async ({ send }) => {
+  send(
     new ImageResponse(
       html`
         <div tw="text-4xl text-green-700" style="background-color: tan">
