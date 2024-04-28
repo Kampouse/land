@@ -3,7 +3,10 @@ import type { PlatformCloudflarePages } from "@builder.io/qwik-city/middleware/c
 import { fetchFont, ImageResponse, html } from "og-img";
 export const onGet: RequestHandler<PlatformCloudflarePages> = async ({
   send,
+  url,
 }) => {
+  console.log(url);
+
   send(
     new ImageResponse(
       html`
