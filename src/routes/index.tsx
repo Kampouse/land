@@ -1,8 +1,6 @@
 import { component$, $, useSignal } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
 import { useLocation } from "@builder.io/qwik-city";
 import Introduction from "~/components/introduction";
-let og = "";
 export default component$(() => {
   const userName = useSignal("jemartel");
   const setName = $(() => {
@@ -17,7 +15,6 @@ export default component$(() => {
 
   const location = useLocation();
   console.log(location.url.origin);
-  og = location.url.origin + "/og-image";
 
   return (
     <>
