@@ -1,4 +1,5 @@
 import { component$, $, useSignal } from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
 import { useLocation } from "@builder.io/qwik-city";
 import Introduction from "~/components/introduction";
 export default component$(() => {
@@ -46,3 +47,16 @@ export default component$(() => {
     </>
   );
 });
+
+export const head: DocumentHead = () => {
+  return {
+    title: "jemartel ~ personal website",
+    meta: [
+      {
+        name: "description",
+        property: "og:image",
+        content: "my personal website",
+      },
+    ],
+  };
+};
