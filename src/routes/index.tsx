@@ -1,7 +1,7 @@
 import { component$, $, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import * as lucid from "lucide-qwik";
-import LandingLinks from "~/components/landingButton";
+import { useLocation } from "@builder.io/qwik-city";
+import Introduction from "~/components/introduction";
 export default component$(() => {
   const userName = useSignal("jemartel");
   const setName = $(() => {
@@ -13,6 +13,10 @@ export default component$(() => {
       document.title = "jemartel ~ personal website";
     }
   });
+
+  const location = useLocation();
+  console.log(location.url.origin);
+
   return (
     <>
       <header class="flex flex-col items-center justify-center  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img    md:h-[20em] lg:h-[25em]    ">
@@ -37,66 +41,7 @@ export default component$(() => {
       </header>
       <main class=" flex  justify-center bg-gradient-to-b md:m-2 lg:m-2        from-[#221539] to-slate-900  ">
         <div class="flex flex-col">
-          <div class="flex flex-col      text-white text-left  rounded-xl   ">
-            <p class="font-serif text-xl  text-center     text-white ">
-              chill Canadian 🇨🇦 <br></br> that enjoy Problem solving <br />
-              from the depths of system programming to <br />
-              the heights of clowning around with the latest web technologies
-            </p>
-            <hr class=" h-px my-5 bg-gray-800 border-0 flex w-full "></hr>
-            <div class="flex  justify-center w-screen "></div>
-            <div class="flex justify-center m-5">
-              <div class="flex flex-col gap-2 justify-center w-full">
-                <div class=" place-self-center ">
-                  learn more about me{" "}
-                  <lucid.ArrowDownIcon class="inline ml-2" size={20} />
-                </div>
-                <div class="place-self-center p-5">
-                  <LandingLinks
-                    link="https://www.linkedin.com/in/jemartel/"
-                    text="what up  =>"
-                  >
-                    <lucid.LinkedinIcon
-                      q:slot="icon"
-                      class="inline ml-2"
-                      size={20}
-                    />
-                  </LandingLinks>
-                  <LandingLinks
-                    link="https://creator.nightcafe.studio/u/Kampouse"
-                    text="creations  =>"
-                  >
-                    <lucid.BrushIcon
-                      q:slot="icon"
-                      class="inline ml-2"
-                      size={20}
-                    />
-                  </LandingLinks>
-
-                  <LandingLinks
-                    link="https://www.github.com/kampouse/"
-                    text="my hub =>"
-                  >
-                    <lucid.GithubIcon
-                      q:slot="icon"
-                      class="inline ml-2"
-                      size={20}
-                    />
-                  </LandingLinks>
-                  <LandingLinks
-                    link="https://www.github.com/kampouse/land"
-                    text=" this website =>"
-                  >
-                    <lucid.GithubIcon
-                      q:slot="icon"
-                      class="inline ml-2"
-                      size={20}
-                    />
-                  </LandingLinks>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Introduction />
         </div>
       </main>
     </>
@@ -109,7 +54,8 @@ export const head: DocumentHead = () => {
     meta: [
       {
         name: "description",
-        content: "my personal website ",
+        property: "og:image",
+        content: "http://localhost:5173/images/og-image.png",
       },
     ],
   };
