@@ -20,7 +20,7 @@ export const onGet: RequestHandler<PlatformCloudflarePages> = async ({
         fonts: [
           {
             name: "Roboto",
-            data: await fetchFont("https://jemartel.dev/fonts/aria-violet.ttf"),
+            data: await fetchFont(`${url.origin}/fonts/aria-violet.ttf`),
             weight: 400,
             style: "normal",
           },
