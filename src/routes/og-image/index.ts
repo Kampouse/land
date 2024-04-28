@@ -5,8 +5,8 @@ export const onGet: RequestHandler = async (req) => {
   req.send(
     new ImageResponse(
       html`
-        <div tw="text-4xl  " style="background-color: red">
-          jemartel / porfolio
+        <div tw="text-4xl text-green-700" style="background-color: tan">
+          Hello, world!
         </div>
       `,
       {
