@@ -1,7 +1,9 @@
 import type { RequestHandler } from "@builder.io/qwik-city";
+import type { PlatformCloudflarePages } from "@builder.io/qwik-city/middleware/cloudflare-pages";
 import { fetchFont, ImageResponse, html } from "og-img";
-
-export const onGet: RequestHandler = async ({ send }) => {
+export const onGet: RequestHandler<PlatformCloudflarePages> = async ({
+  send,
+}) => {
   send(
     new ImageResponse(
       html`
