@@ -55,7 +55,7 @@ export const head: DocumentHead = () => {
       {
         name: "description",
         property: "og:image",
-        content: "my personal website",
+        content: "https://images.nightcafe.studio/jobs/T03JXPhTw4IpyN8feyEL/T03JXPhTw4IpyN8feyEL--1--9v6v3_6.9444x-real-esrgan-animevideo-v3.jpg?tr=w-1600,c-at_max",
       },
     ],
   };
