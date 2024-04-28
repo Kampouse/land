@@ -6,7 +6,7 @@ export const onGet: RequestHandler = async (req) => {
     new ImageResponse(
       // Use Tailwind CSS or style attribute
       html`
-        <div tw="text-5xl  " style="background-color: tan">
+        <div tw="text-4xl  " style="background-color: red">
           jemartel / porfolio
         </div>
       `,
