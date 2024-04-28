@@ -49,16 +49,3 @@ export default component$(() => {
     </>
   );
 });
-
-export const head: DocumentHead = () => {
-  return {
-    title: "jemartel ~ personal website",
-    meta: [
-      {
-        name: "description",
-        property: "og:image",
-        content: og,
-      },
-    ],
-  };
-};
