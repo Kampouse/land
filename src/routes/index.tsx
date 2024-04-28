@@ -55,7 +55,7 @@ export const head: DocumentHead = () => {
       {
         name: "description",
         property: "og:image",
-        content: "http://localhost:5173/images/og-image.png",
+        content: "https://jemartel.dev/images/og-image.png",
       },
     ],
   };
