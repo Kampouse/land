@@ -54,8 +54,16 @@ export const head: DocumentHead = () => {
 
     meta: [
       {
-        property: "og:image:",
+        property: "og:image",
         content: "https://jemartel.dev/og-image",
+      },
+      {
+        property: "og:image:width",
+        content: "1200",
+      },
+      {
+        property: "og:image:height",
+        content: "630",
       },
     ],
   };
