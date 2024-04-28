@@ -6,26 +6,31 @@ export const onGet: RequestHandler<PlatformCloudflarePages> = async ({
   url,
 }) => {
   console.log(url);
-
-  send(
-    new ImageResponse(
-      html`
-        <div tw="text-4xl text-green-700" style="background-color: tan">
-          Hello, world!
-        </div>
-      `,
-      {
-        width: 300,
-        height: 300,
-        fonts: [
+  fetchFont(`${url.origin}/fonts/aria-violet.ttf`)
+    .then((data) => {
+      send(
+        new ImageResponse(
+          html`
+            <div tw="text-4xl text-green-700" style="background-color: tan">
+              Hello, world!
+            </div>
+          `,
           {
-            name: "Roboto",
-            data: await fetchFont(`${url.origin}/fonts/aria-violet.ttf`),
-            weight: 400,
-            style: "normal",
+            width: 300,
+            height: 300,
+            fonts: [
+              {
+                name: "Roboto",
+                data: data,
+                weight: 400,
+                style: "normal",
+              },
+            ],
           },
-        ],
-      },
-    ),
-  );
+        ),
+      );
+    })
+    .catch((e) => {
+      send(e);
+    });
 };
