@@ -1,6 +1,7 @@
 import { component$, $, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import { useLocation } from "@builder.io/qwik-city";
+
+import Blog from "~/components/blog";
 import Introduction from "~/components/introduction";
 export default component$(() => {
   const userName = useSignal("jemartel");
@@ -39,6 +40,7 @@ export default component$(() => {
       <main class=" flex  justify-center bg-gradient-to-b md:m-2 lg:m-2        from-[#221539] to-slate-900  ">
         <div class="flex flex-col">
           <Introduction />
+          <Blog />
         </div>
       </main>
     </>
@@ -51,39 +53,37 @@ export const head: DocumentHead = () => {
     meta: [
       {
         property: "og:image",
-        content: "https://images.nightcafe.studio/jobs/T03JXPhTw4IpyN8feyEL/T03JXPhTw4IpyN8feyEL--1--9v6v3_6.9444x-real-esrgan-animevideo-v3.jpg?tr=w-1600,c-at_max",
+        content:
+          "https://images.nightcafe.studio/jobs/T03JXPhTw4IpyN8feyEL/T03JXPhTw4IpyN8feyEL--1--9v6v3_6.9444x-real-esrgan-animevideo-v3.jpg?tr=w-1600,c-at_max",
       },
       {
         property: "og:image:width",
-        content: "1600"
+        content: "1600",
       },
       {
         property: "og:image:height",
-        content: "900"
+        content: "900",
       },
       {
         property: "og:image:alt",
-        content: "jean-philippe martel personal website"
+        content: "jean-philippe martel personal website",
       },
       {
         property: "og:site_name",
-        content: "jean-philippe martel"
+        content: "jean-philippe martel",
       },
       {
         property: "og:description",
-        content: "jean-philippe martel personal website"
-      }, {
-        property: "og:title",
-        content: "jean-philippe martel"
-      }, {
-        property: "og:url",
-        content: "https://jemartel.com"
+        content: "jean-philippe martel personal website",
       },
-
-
-
-
-
+      {
+        property: "og:title",
+        content: "jean-philippe martel",
+      },
+      {
+        property: "og:url",
+        content: "https://jemartel.com",
+      },
     ],
   };
 };
