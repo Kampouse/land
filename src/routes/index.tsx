@@ -14,9 +14,6 @@ export default component$(() => {
     }
   });
 
-  const location = useLocation();
-  console.log(location.url.origin);
-
   return (
     <>
       <header class="flex flex-col items-center justify-center  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img    md:h-[20em] lg:h-[25em]    ">

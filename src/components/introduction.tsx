@@ -16,7 +16,7 @@ export default component$(() => {
             learn more about me{" "}
             <lucid.ArrowDownIcon class="inline ml-2" size={20} />
           </div>
-          <div class="place-self-center p-5">
+          <div class="place-self-center p-5 gap flex flex-row">
             <LandingLinks
               link="https://www.linkedin.com/in/jemartel/"
               text="what up  =>"
