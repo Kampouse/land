@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 let platform = {};
 
-if(process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
   const { getPlatformProxy } = await import('wrangler');
   platform = await getPlatformProxy();
 }
@@ -13,8 +13,17 @@ if(process.env.NODE_ENV === 'development') {
 export default defineConfig((): UserConfig => {
   return {
     plugins: [qwikCity({
-      platform
+      platform,
+
+
+
+
+
     }), qwikVite(), tsconfigPaths()],
+
+
+
+
     server: {
       headers: {
         "Cache-Control": "public, max-age=0",

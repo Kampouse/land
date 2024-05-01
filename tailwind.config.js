@@ -11,6 +11,10 @@ export default {
         danger: "#F1232D", // Color 5 (red)
         fortext: "ff8c80",
       },
+      backgroundImage: {
+        "hero-pattern":
+          "url('https://images.nightcafe.studio/jobs/T03JXPhTw4IpyN8feyEL/T03JXPhTw4IpyN8feyEL--1--9v6v3_6.9444x-real-esrgan-animevideo-v3.jpg?tr=w-1600,c-at_max')",
+      },
     },
     fontFamily: {
       display: ["Pacifico", "cursive"],
