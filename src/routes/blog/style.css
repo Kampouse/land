@@ -2,6 +2,7 @@
 
 :root {
   --title-color: white;
+  --sub-title-color: #d3d3d3;
   --accent: 136, 58, 234;
   --accent-light: 224, 204, 250;
   --accent-dark: 49, 10, 101;
@@ -29,7 +30,7 @@
   --misc-color-dark: #f39c12;
 
   /* FONTS */
-  --font-family: "Merriweather";
+  --font-family: "Merriweather", serif;
   --font-family-code: "Menlo", monospace;
   --font-size-sm: 1rem;
   /* Base font size for small elements */
@@ -49,38 +50,58 @@
 }
 
 .post {
-  margin-top: 60px;
   font-family:;
+  color: var(--text-color);
 }
 
 .post h1 {
+  line-height: 1em;
   color: var(--title-color);
   font-family: var(--font-family);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-light);
 }
 
 .post h1 + p {
-  margin-top: 10px;
   font-size: var(--font-size-sm);
   color: var(--misc-color);
+  line-height: 5em;
 }
 
 .post h2 {
-  color: var(--title-color);
+  color: var(--sub-title-color);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-light);
+}
+.post h3 {
+  color: var(--sub-title-color);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-light);
+}
+.post h4 {
+  color: var(--sub-title-color);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-light);
+}
+.post h5 {
+  color: var(--sub-title-color);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-light);
+}
+.post h6 {
+  color: var(--sub-title-color);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-light);
 }
 
 .post p {
-  margin-top: 20px;
   font-family: var(--font-family);
-  line-height: 1.6;
+  line-height: 1.3rem;
   color: var(--text-color);
 }
 
 .post hr + p {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .post a {
@@ -95,6 +116,8 @@
 }
 
 .post li {
+  line-height: 1em;
+  color: var(--text-color);
   margin-top: 10px;
 }
 
