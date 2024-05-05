@@ -1,3 +1,13 @@
+---
+title: Hello World
+description: This is a sample Markdown file to test your CSS styles.
+date: 2024-01-01
+tags:
+  - super
+  - exiting
+  - docs
+---
+
 # This is a title
 
 ## this a subtitle
