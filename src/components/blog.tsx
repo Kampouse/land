@@ -1,28 +1,7 @@
 import { component$ } from "@builder.io/qwik";
-import { Link, server$, useNavigate } from "@builder.io/qwik-city";
-import { isServer } from "@builder.io/qwik/build";
+import { Link, useNavigate } from "@builder.io/qwik-city";
 import data from "~/data.json";
 import * as lucid from "lucide-qwik";
-const blogs = [
-  {
-    title: "i hate the  javascript and the edge but that ok",
-    description: "rant about javascript and edge becaus its stoupid",
-    date: "some date",
-    link: "/blog/first",
-  },
-  {
-    title: "i hate the  javascript and the edge but that ok",
-    description: "rant about javascript and edge becaus its stoupid",
-    date: "some date",
-    link: "/blog/first",
-  },
-  {
-    title: "blog title",
-    description: "blog description",
-    date: "some other date",
-    link: "/blog/second",
-  },
-];
 
 type BlogEntry = {
   title: string;
