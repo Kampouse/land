@@ -1,7 +1,13 @@
 import { component$ } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
+import { Link, useNavigate } from "@builder.io/qwik-city";
 import * as lucid from "lucide-qwik";
 const blogs = [
+  {
+    title: "i hate the  javascript and the edge but that ok",
+    description: "rant about javascript and edge becaus its stoupid",
+    date: "some date",
+    link: "/blog/first",
+  },
   {
     title: "i hate the  javascript and the edge but that ok",
     description: "rant about javascript and edge becaus its stoupid",
@@ -16,6 +22,8 @@ const blogs = [
   },
 ];
 export default component$(() => {
+  const navi = useNavigate();
+
   return (
     <div class=" flex flex-col">
       <div class=" text-center place-self-center  text-white  ">
@@ -23,18 +31,31 @@ export default component$(() => {
         <div class="  pb-2 ">
           Blogs entries <lucid.ArrowDownIcon class="inline ml-2" size={20} />
         </div>
-        <ul class=" list-decimal flex flex-col">
-          {blogs.map((blog, index) => {
+        <ul
+          class="  list-decimal flex flex-col  mb-4"
+          about="list of blog entries"
+          aria-label="list of blog entries"
+        >
+          {blogs.map((blog) => {
             return (
-              <li key={index} class="flex  flex-row align-top my-1">
+              <li
+                class=" text-white text-left m-2 cursor-pointer   border-opacity-40  border-b-2  border-gray-800 border rounded-lg transition ease-linear hover:bg-opacity-75  hover:scale-105 hover:shadow-lg"
+                onClick$={() => navi(blog.link)}
+                key={blog.title}
+                aria-label="blog entry"
+              >
                 <Link
+                  class="text-left  text-xl  ml-5"
                   href={blog.link}
-                  class="text-white
-            hover:text-gray-400 text-left"
+                  aria-label="link to blog"
+                  about="link to blog"
                 >
-                  <h2 class="text-2xl font-bold">{blog.title}</h2>
-                  <h3 class="text-[#d3d3d3] pl">{blog.description}</h3>
+                  {blog.title}
                 </Link>
+                <h3 class=" border-opacity-40  text-sm   text-center ml-5 text-gray-400">
+                  {" "}
+                  {blog.description}
+                </h3>
               </li>
             );
           })}
