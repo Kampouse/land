@@ -48,7 +48,10 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "lucide-qwik": "^1.0.0",
-    "og-img": "^0.2.1"
+    "og-img": "^0.2.1",
+    "path": "^0.12.7",
+    "vite-plugin-fs": "^1.1.0"
   }
 }

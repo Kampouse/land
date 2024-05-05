@@ -2,27 +2,25 @@ import { defineConfig, type UserConfig } from "vite";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+import fsp from "./fs-plugin";
 
 let platform = {};
 
-if (process.env.NODE_ENV === 'development') {
-  const { getPlatformProxy } = await import('wrangler');
+if (process.env.NODE_ENV === "development") {
+  const { getPlatformProxy } = await import("wrangler");
   platform = await getPlatformProxy();
 }
 
 export default defineConfig((): UserConfig => {
   return {
-    plugins: [qwikCity({
-      platform,
-
-
-
-
-
-    }), qwikVite(), tsconfigPaths()],
-
-
-
+    plugins: [
+      qwikCity({
+        platform,
+      }),
+      qwikVite(),
+      tsconfigPaths(),
+      fsp(),
+    ],
 
     server: {
       headers: {

@@ -1,37 +1,8 @@
 import { component$ } from "@builder.io/qwik";
-import {
-  Link,
-  routeLoader$,
-  server$,
-  useDocumentHead,
-  useNavigate,
-} from "@builder.io/qwik-city";
+import { Link, server$, useNavigate } from "@builder.io/qwik-city";
 import { isServer } from "@builder.io/qwik/build";
-import path from "path";
-import fs from "fs";
-import matter from "gray-matter";
+import data from "~/data.json";
 import * as lucid from "lucide-qwik";
-const blogs = [
-  {
-    title: "i hate the  javascript and the edge but that ok",
-    description: "rant about javascript and edge becaus its stoupid",
-    date: "some date",
-    link: "/blog/first",
-  },
-  {
-    title: "i hate the  javascript and the edge but that ok",
-    description: "rant about javascript and edge becaus its stoupid",
-    date: "some date",
-    link: "/blog/first",
-  },
-  {
-    title: "blog title",
-    description: "blog description",
-    date: "some other date",
-    link: "/blog/second",
-  },
-];
-const blogPath = "src/routes/blog";
 
 type BlogEntry = {
   title: string;
@@ -41,51 +12,15 @@ type BlogEntry = {
 };
 
 let blogEntries = Array<BlogEntry>();
-const blogDirs = fs.readdirSync(path.join(blogPath));
 
-const getBlogEntries = () => {
-  blogDirs.forEach((blog) => {
-    //check if its a folder or not
-    if (!fs.lstatSync(path.join(blogPath, blog)).isDirectory()) {
-      return;
-    }
-
-    const fileContents = fs.readFileSync(path.join(blogPath, blog, "index.md"));
-
-    const { data, _ } = matter(fileContents);
-    const title =
-      data == undefined || data.title == undefined ? blog : data.title;
-    data.description =
-      data.description == undefined ? "no description" : data.description;
-    blogs;
-
-    console.log("title", title, data);
-
-    blogEntries = [
-      ...blogEntries,
-      {
-        title: title,
-        description: data.description,
-        date: data.date,
-        link: `/blog/${blog}`,
-      },
-    ];
-  });
-
-  return blogEntries;
+const getBlogEntries = async () => {
+  console.log("getBlogEntries", data);
+  blogEntries = data;
+  return;
 };
 
 const serv = server$(getBlogEntries);
-blogEntries.length == 0 && isServer && (await serv());
-if (!isServer && blogEntries.length == 0) {
-  console.log("client");
-  const output = await serv();
-  console.log("output", output);
-  blogEntries.push(...output);
-}
-
-console.log("blogEntries", blogEntries);
-
+blogEntries.length == 0 && isServer && serv();
 export default component$(() => {
   const navi = useNavigate();
 

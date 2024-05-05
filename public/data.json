@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Title 1",
+    "description": "Description 1",
+    "date": "2024-05-05",
+    "link": "https://example.com/1"
+  },
+  {
+    "title": "Title 2",
+    "description": "Description 2",
+    "date": "2024-05-06",
+    "link": "https://example.com/2"
+  }
+]
