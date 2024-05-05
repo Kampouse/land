@@ -3,6 +3,26 @@ import { Link, server$, useNavigate } from "@builder.io/qwik-city";
 import { isServer } from "@builder.io/qwik/build";
 import data from "~/data.json";
 import * as lucid from "lucide-qwik";
+const blogs = [
+  {
+    title: "i hate the  javascript and the edge but that ok",
+    description: "rant about javascript and edge becaus its stoupid",
+    date: "some date",
+    link: "/blog/first",
+  },
+  {
+    title: "i hate the  javascript and the edge but that ok",
+    description: "rant about javascript and edge becaus its stoupid",
+    date: "some date",
+    link: "/blog/first",
+  },
+  {
+    title: "blog title",
+    description: "blog description",
+    date: "some other date",
+    link: "/blog/second",
+  },
+];
 
 type BlogEntry = {
   title: string;
@@ -13,14 +33,10 @@ type BlogEntry = {
 
 let blogEntries = Array<BlogEntry>();
 
-const getBlogEntries = async () => {
-  console.log("getBlogEntries", data);
-  blogEntries = data;
-  return;
+const getBlogEntries = () => {
+  return data as BlogEntry[];
 };
-
-const serv = server$(getBlogEntries);
-blogEntries.length == 0 && isServer && serv();
+blogEntries = getBlogEntries();
 export default component$(() => {
   const navi = useNavigate();
 
