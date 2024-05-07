@@ -65,7 +65,7 @@
 .post h1 + p {
   font-size: var(--font-size-sm);
   color: var(--misc-color);
-  line-height: 5em;
+  line-height: 1.5em;
 }
 
 .post h2 {

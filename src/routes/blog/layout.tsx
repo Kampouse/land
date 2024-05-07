@@ -4,8 +4,8 @@ export default component$(() => {
   useStyles$(styles);
   return (
     <div class=" flex bg-hero-pattern bg-cotain min-h-screen bg-cover bg-repeat-y ">
-      <div class="flex    my-4 mx-2 lg:mx-8   rounded-xl   w-full        bg-[#291D53] ">
-        <article class="post mx-4  my-3  md:mx-24 lg:mx-56">
+      <div class="flex    my-4 mx-2 lg:mx-8   rounded-xl   w-full py-6        bg-[#291D53] ">
+        <article class="post mx-4  my-3  md:mx-24 lg:mx-40">
           <Slot />
         </article>
       </div>
