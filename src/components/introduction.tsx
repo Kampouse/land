@@ -5,10 +5,12 @@ export default component$(() => {
   return (
     <div class="flex flex-col      text-white text-left  rounded-xl   ">
       <p class="font-serif text-xl  text-center     text-white ">
-        chill Canadian 🇨🇦 <br></br> that enjoy Problem solving <br />
-        from the depths of system programming to <br />
-        the heights of clowning around with the latest web technologies
+        Chill Canadian 🇨🇦 <br></br>
+        who enjoys problem-solving, from the depths of system programming to the{" "}
+        <br />
+        heights of clowning around with the latest web technologies.{" "}
       </p>
+
       <hr class=" h-px my-5 bg-gray-800 border-0 flex w-full "></hr>
       <div class="flex justify-center h-fit">
         <div class="flex flex-col gap-2 justify-center w-full">
@@ -19,19 +21,19 @@ export default component$(() => {
           <div class="place-self-center  gap flex flex-row">
             <LandingLinks
               link="https://www.linkedin.com/in/jemartel/"
-              text="what up  =>"
+              text="linkedin "
             >
               <lucid.LinkedinIcon q:slot="icon" class="inline ml-2" size={20} />
             </LandingLinks>
             <LandingLinks
               link="https://creator.nightcafe.studio/u/Kampouse"
-              text="creations  =>"
+              text="creations "
             >
               <lucid.BrushIcon q:slot="icon" class="inline ml-2" size={20} />
             </LandingLinks>
             <LandingLinks
               link="https://www.github.com/kampouse/"
-              text="my hub =>"
+              text="github "
             >
               <lucid.GithubIcon q:slot="icon" class="inline ml-2" size={20} />
             </LandingLinks>
