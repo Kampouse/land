@@ -40,7 +40,7 @@ export default component$(() => {
 
             <LandingLinks
               link="https://www.github.com/kampouse/land"
-              text="website =>"
+              text="website"
             >
               <lucid.GithubIcon q:slot="icon" class="inline ml-2" size={20} />
             </LandingLinks>
