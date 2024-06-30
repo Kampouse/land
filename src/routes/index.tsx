@@ -4,6 +4,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import Blog from "~/components/blog";
 import Introduction from "~/components/introduction";
 import * as lucid from "lucide-qwik"
+import Projects from "~/components/Project";
 export default component$(() => {
   const userName = useSignal("Jean-philippe martel");
   const setName = $(() => {
@@ -35,15 +36,9 @@ export default component$(() => {
                 <lucid.HeartIcon size={20} color="red" class="inline mx-2" />
               </h1>)}
           </div >
-
-
         </div  >
-
-
-
       </header>
       <h1 class="  text-2xl leading-0 md:text-5xl lg:text-5xl    px-5 py-4 lg:py-8 lg:pb-1 font-medium tracking-widest underline    bio-Rhyme     bg-gradient-to-r text-center from-primary to-danger bg-clip-text text-transparent ">
-
         Passionate software craftman  &   creative tinkering
       </h1>
 
@@ -52,9 +47,9 @@ export default component$(() => {
 
           <Introduction />
 
-          <div class="flex flex-row justify-center py-4">
-            <h1 class="text-center text-white text-2xl"> Projects </h1>
-          </div >
+          <Projects />
+
+
 
           <Blog />
 

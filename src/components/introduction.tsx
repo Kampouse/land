@@ -9,7 +9,7 @@ export default component$(() => {
       </p>
 
       <div class="flex justify-center h-fit">
-        <div class="flex flex-col gap-4 justify-center w-full">
+        <div class="flex flex-col gap-2 justify-center w-full">
 
           <div class="flex flex-row justify-center py-4">
             <h1 class="text-center text-white font-medium  text-3xl ">  story time </h1>
