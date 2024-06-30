@@ -1,181 +1,192 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
-  --title-color: white;
-  --sub-title-color: #d3d3d3;
-  --accent: 136, 58, 234;
-  --accent-light: 224, 204, 250;
-  --accent-dark: 49, 10, 101;
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--accent)),
-    rgb(var(--accent-light)) 30%,
-    white 60%
-  );
+    --title-color: white;
+    --sub-title-color: #d3d3d3;
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(45deg,
+            rgb(var(--accent)),
+            rgb(var(--accent-light)) 30%,
+            white 60%);
 
-  /* CODE BLOCK COLORS */
-  --block-bg: #bdc3c7;
-  --block-text: #1a2334;
+    /* CODE BLOCK COLORS */
+    --block-bg: #bdc3c7;
+    --block-text: #1a2334;
 
-  /* THEME */
-  /* LIGHT */
-  --bg-color-light: #ecf0f1;
-  --text-color-light: #34495e;
-  --title-color-light: #1a2334;
-  --misc-color-light: #bf4500;
-  /* DARK */
-  --bg-color-dark: #1a2334;
-  --text-color-dark: #ecf0f1;
-  --title-color-dark: #bdc3c7;
-  --misc-color-dark: #f39c12;
+    /* THEME */
+    /* LIGHT */
+    --bg-color-light: #ecf0f1;
+    --text-color-light: #34495e;
+    --title-color-light: #1a2334;
+    --misc-color-light: #bf4500;
+    /* DARK */
+    --bg-color-dark: #1a2334;
+    --text-color-dark: #ecf0f1;
+    --title-color-dark: #bdc3c7;
+    --misc-color-dark: #f39c12;
 
-  /* FONTS */
-  --font-family: "Merriweather", serif;
-  --font-family-code: "Menlo", monospace;
-  --font-size-sm: 1rem;
-  /* Base font size for small elements */
-  --font-size-md: 1.2rem;
-  /* Standard body text size */
-  --font-size-lg: 1.5rem;
-  /* Headings or larger emphasis */
-  --font-size-xl: 2rem;
-  /* Very large headings or titles */
-  --font-size-code: 15px;
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
+    /* FONTS */
+    --font-family: "Merriweather", serif;
+    --font-family-code: "Menlo", monospace;
+    --font-size-sm: 1rem;
+    /* Base font size for small elements */
+    --font-size-md: 1.2rem;
+    /* Standard body text size */
+    --font-size-lg: 1.5rem;
+    /* Headings or larger emphasis */
+    --font-size-xl: 2rem;
+    /* Very large headings or titles */
+    --font-size-code: 15px;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
 
-  /* SIZES */
-  --max-width: 720px;
-  --text-color: white;
+    /* SIZES */
+    --max-width: 720px;
+    --text-color: white;
 }
 
 .post {
-  font-family:;
-  color: var(--text-color);
+    font-family: ;
+    color: var(--text-color);
 }
 
 .post h1 {
-  line-height: 1em;
-  color: var(--title-color);
-  font-family: var(--font-family);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-light);
+    line-height: 1.5em;
+    color: var(--title-color);
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    font-weight: 900;
 }
 
-.post h1 + p {
-  font-size: var(--font-size-sm);
-  color: var(--misc-color);
-  line-height: 1.5em;
+.post h1+p {
+    font-size: var(--font-size-sm);
+    color: var(--misc-color);
+
+
 }
+
+@media (min-width: 1024px) {
+    .post h1+p {
+        margin-right: 25em;
+    }
+}
+
+
 
 .post h2 {
-  color: var(--sub-title-color);
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-light);
+    color: var(--sub-title-color);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-light);
 }
+
 .post h3 {
-  color: var(--sub-title-color);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-light);
+    color: var(--sub-title-color);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-light);
 }
+
 .post h4 {
-  color: var(--sub-title-color);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-light);
+    color: var(--sub-title-color);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-light);
 }
+
 .post h5 {
-  color: var(--sub-title-color);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-light);
+    color: var(--sub-title-color);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-light);
 }
+
 .post h6 {
-  color: var(--sub-title-color);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-light);
+    color: var(--sub-title-color);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-light);
 }
 
 .post p {
-  font-family: var(--font-family);
-  line-height: 1.3rem;
-  color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.3rem;
+    color: var(--text-color);
 }
 
-.post hr + p {
-  margin-top: 20px;
+.post hr+p {
+    margin-top: 20px;
 }
 
 .post a {
-  color: var(--misc-color);
+    color: var(--misc-color);
 }
 
 .post ul,
 .post ol {
-  margin-top: 20px;
-  padding-left: 20px;
-  list-style: disc;
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style: disc;
 }
 
 .post li {
-  line-height: 1em;
-  color: var(--text-color);
-  margin-top: 10px;
+    line-height: 1em;
+    color: var(--text-color);
+    margin-top: 10px;
 }
 
 .post li pre {
-  margin-left: -30px;
+    margin-left: -30px;
 }
 
 .post pre {
-  margin: 20px -10px 0 -10px;
+    margin: 20px -10px 0 -10px;
 }
 
 .post pre code {
-  font-family: var(--font-family-code);
-  font-size: var(--font-size-code);
+    font-family: var(--font-family-code);
+    font-size: var(--font-size-code);
 }
 
 .post p code {
-  padding: 0 4px;
-  font-family: var(--font-family-code);
-  font-size: var(--font-size-code);
-  color: var(--block-text);
-  background-color: var(--block-bg);
-  border-radius: 4px;
+    padding: 0 4px;
+    font-family: var(--font-family-code);
+    font-size: var(--font-size-code);
+    color: var(--block-text);
+    background-color: var(--block-bg);
+    border-radius: 4px;
 }
 
 .post blockquote {
-  margin-top: 20px;
-  padding-left: 30px;
-  font-style: italic;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-style: italic;
 }
 
 .post hr {
-  margin-top: 40px;
-  height: 2px;
-  background-color: var(--text-color);
+    margin-top: 40px;
+    height: 2px;
+    background-color: var(--text-color);
 }
 
 .post p em {
-  font-style: italic;
+    font-style: italic;
 }
 
 .post img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
 .post strong {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 @media (min-width: 768px) {
-  .post pre {
-    margin: 20px 0 0 0;
-    border-radius: 4px;
-  }
+    .post pre {
+        margin: 20px 0 0 0;
+        border-radius: 4px;
+    }
 
-  .post li pre {
-    margin-left: -20px;
-  }
+    .post li pre {
+        margin-left: -20px;
+    }
 }
