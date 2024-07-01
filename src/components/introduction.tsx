@@ -3,16 +3,16 @@ import * as lucid from "lucide-qwik";
 import { component$ } from "@builder.io/qwik";
 export default component$(() => {
   return (
-    <div class="flex flex-col      text-white text-left  rounded-xl   ">
+    <div class="flex flex-col      text-white text-left  rounded-xl  w-full ">
       <p class="font-serif text-xl  text-center     text-white ">
         <span class="tracking-tighter font-extralight italic h-32 py-32">
           (Good People) {"=>"} Great Product!{" "}
         </span>
       </p>
 
-      <div class="flex justify-center h-fit ">
+      <div class="flex justify-center h-fit w-full ">
         <div class="flex flex-col gap-2 my-8 justify-center w-full">
-          <div class="flex self-center text-center flex-col text-2xl font-light justify-center my-4  px-8   rounded-xl  w-[25em] ">
+          <div class="flex self-center text-center flex-col text-2xl font-light justify-center my-4  lg:px-8   rounded-xl  lg:w-[25em] px-8 ">
             Writing computer logic is fun, its an endless sandbox. the web
             plaform is even more fun, its a multiplayer sandbox that can be
             shared with the world. I been digging in the sandbox for a while

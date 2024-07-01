@@ -41,8 +41,8 @@ export default component$(() => {
         Passionate software craftman & creative tinkering
       </h1>
 
-      <main class=" flex  justify-center bg-gradient-to-b md:m-2 lg:m-2 from-[#221539] to-slate-900  ">
-        <div class="flex flex-col">
+      <main class=" flex   justify-center bg-gradient-to-b md:m-2 lg:m-2 from-[#221539] to-slate-900   ">
+        <div class="flex flex-col w-full">
           <Introduction />
 
           <Projects />
