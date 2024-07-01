@@ -3,7 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Blog from "~/components/blog";
 import Introduction from "~/components/introduction";
-import * as lucid from "lucide-qwik"
+import * as lucid from "lucide-qwik";
 import Projects from "~/components/Project";
 export default component$(() => {
   const userName = useSignal("Jean-philippe martel");
@@ -20,7 +20,6 @@ export default component$(() => {
   return (
     <>
       <header class="flex flex-col items-center lg:justify-center lg:pt-20  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img    h-[8em] md:h-[20em] lg:h-[30em]     ">
-
         <div class="m-8 lg:m-0      " onClick$={setName}>
           <div class=" font-bold lg:p-8 px-8 py-2  from-zinc-50 to-gray-800  text-white bg-[#221539]  opacity-[65%] rounded-xl cursor-pointer flex  text-center flex-col justify-center ">
             {userName.value == "jemartel" ? (
@@ -32,27 +31,23 @@ export default component$(() => {
               <h1 class=" text-center   typed-out  font-display  underline">
                 hello am &nbsp;
                 {userName} ~
-
                 <lucid.HeartIcon size={20} color="red" class="inline mx-2" />
-              </h1>)}
-          </div >
-        </div  >
+              </h1>
+            )}
+          </div>
+        </div>
       </header>
       <h1 class="  text-2xl leading-0 md:text-5xl lg:text-5xl    px-5 py-4 lg:py-8 lg:pb-1 font-medium tracking-widest underline    bio-Rhyme     bg-gradient-to-r text-center from-primary to-danger bg-clip-text text-transparent ">
-        Passionate software craftman  &   creative tinkering
+        Passionate software craftman & creative tinkering
       </h1>
 
-      <main class=" flex  justify-center bg-gradient-to-b md:m-2 lg:m-2        from-[#221539] to-slate-900  ">
+      <main class=" flex  justify-center bg-gradient-to-b md:m-2 lg:m-2 from-[#221539] to-slate-900  ">
         <div class="flex flex-col">
-
           <Introduction />
 
           <Projects />
 
-
-
           <Blog />
-
         </div>
       </main>
     </>

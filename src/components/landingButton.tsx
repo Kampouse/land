@@ -11,7 +11,7 @@ export default component$<props>((props) => {
       target="_blank"
       href={props.link}
     >
-      <h1 class="self-center">{props.text} </h1 >
+      <h1 class="self-center">{props.text} </h1>
       <Slot name="icon" />
     </a>
   );
