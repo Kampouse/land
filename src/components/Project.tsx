@@ -19,7 +19,7 @@ export default component$(() => {
 
       <div class="  pt-4 lg:mx-0 mx-16  flex  flex-col ">
         <div class="flex flex-row gap-4 pb-2   justify-center content-center self-center">
-          <h1 class="pl-4  self-left  text-white text-2xl underline decoration-4 decoration-[#e6284b]  ">
+          <h1 class="self-left lg:pb-1 text-white text-2xl underline decoration-4 decoration-[#e6284b]  ">
             {" "}
             Coffee Now{" "}
           </h1>
@@ -40,7 +40,11 @@ export default component$(() => {
         </div>
         <Background class=" lg:self-center scale-125 lg:scale-100 my-4 lg:my-0 lg:w-[720px] lg:h-[500] border rounded-xl" />
       </div>
-      <div class="flex flex-row text-white justify-center py-4"></div>
+      <h1 class="  lg:text-center py-2 px-8 lg:w-[31.5em] text-white self-center w-96">
+        text here because I am not done yet i thin you should be able to see
+        this text here or maybe not I am not sure maybe I should add more text
+        here
+      </h1>
     </div>
   );
 });
