@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "name": "Coffee Now",
+      "description": "E-commerce website for coffee lovers!  Aimed to make landing page with a selection of coffee products with a cart and checkout functionality!",
+      "github": "https://github.com/kampouse/coffee",
+      "website": "https://coffee-plum-two.vercel.app/",
+      "image": "./coffee.png"
+    }
+  ]
+}

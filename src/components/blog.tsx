@@ -10,10 +10,10 @@ type BlogEntry = {
   link: string;
 };
 
-let blogEntries = Array<BlogEntry>();
 
+let blogEntries = [] as Array<BlogEntry>;
 const getBlogEntries = () => {
-  return data as BlogEntry[];
+  return data
 };
 blogEntries = getBlogEntries();
 export default component$(() => {
@@ -22,7 +22,7 @@ export default component$(() => {
   return (
     <div class=" flex flex-col">
       <div class=" text-center place-self-center  text-white  ">
-        <hr class=" h-px my-5  bg-gray-800 border-0 flex w-full "></hr>
+        <hr class=" h-px my-2  bg-gray-800 border-0 flex w-full "></hr>
         <div class="  pb-2 ">
           Blogs entries <lucid.ArrowDownIcon class="inline ml-2" size={20} />
         </div>
@@ -31,7 +31,7 @@ export default component$(() => {
           about="list of blog entries"
           aria-label="list of blog entries"
         >
-          {blogEntries.map((blog) => {
+          {blogEntries.map((blog: BlogEntry) => {
             return (
               <li
                 class=" text-white text-left m-2 cursor-pointer   border-opacity-40  border-b-2  border-gray-800 border rounded-lg transition ease-linear hover:bg-opacity-75  hover:scale-105 hover:shadow-lg"
