@@ -11,8 +11,8 @@ export default component$(() => {
       </p>
 
       <div class="flex justify-center h-fit w-full ">
-        <div class="flex flex-col gap-2 my-8 justify-center w-full">
-          <div class="flex self-center text-center flex-col text-2xl font-light justify-center my-4  lg:px-8   rounded-xl  lg:w-[25em] px-8 ">
+        <div class="flex flex-col gap-2  justify-center w-full">
+          <div class="flex self-center text-center flex-col text-2xl font-light justify-center my-1  lg:px-8   rounded-xl  lg:w-[25em] px-8 ">
             Writing computer logic is fun, its an endless sandbox. the web
             plaform is even more fun, its a multiplayer sandbox that can be
             shared with the world. I been digging in the sandbox for a while
