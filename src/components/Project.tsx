@@ -26,14 +26,14 @@ export default component$(() => {
                 {project.name}{" "}
 
                 <Link
-                  href="https://github.com/kampouse/coffee"
+                  href={project.github}
                   target="_blank"
                   class=" flex self-center"
                 >
                   <Lucid.GithubIcon color="white" class="self-center" />
                 </Link>
                 <Link
-                  href="https://coffee-plum-two.vercel.app/"
+                  href={project.website}
                   target="_blank"
                   class="flex "
                 >
