@@ -24,17 +24,24 @@ export default component$(() => {
           </h1>
           <div class="place-self-center  gap flex flex-col lg:flex-row">
             <LandingLinks
-              link="mailto:jp@jemartel.dev"
-              text="Contact Me"
-            >
-              <lucid.MailIcon q:slot="icon" class="inline ml-2" size={20} />
-            </LandingLinks>
-            <LandingLinks
               link="https://www.linkedin.com/in/jemartel/"
               text="linkedin"
             >
               <lucid.LinkedinIcon q:slot="icon" class="inline ml-2" size={20} />
             </LandingLinks>
+            <LandingLinks
+              link="https://cal.com/Kampouse/30min"
+              text="Book a meeting"
+            >
+              <lucid.PhoneIcon q:slot="icon" class="inline ml-2" size={20} />
+            </LandingLinks>
+            <LandingLinks
+              link="mailto:jp@jemartel.dev"
+              text="Mail Me"
+            >
+              <lucid.MailIcon q:slot="icon" class="inline ml-2" size={20} />
+            </LandingLinks>
+
             <LandingLinks
               link="https://creator.nightcafe.studio/u/Kampouse"
               text="AI creations"
