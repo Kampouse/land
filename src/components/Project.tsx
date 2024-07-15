@@ -2,7 +2,6 @@ import { component$ } from "@builder.io/qwik";
 import * as Lucid from "lucide-qwik";
 import { Link } from "@builder.io/qwik-city";
 import data from "../data/project.json"
-import { useNavigate } from "@builder.io/qwik-city";
 
 
 interface Project {
@@ -14,7 +13,6 @@ interface Project {
 }
 const projects = data.projects as Array<Project>;
 export default component$(() => {
-  const nav = useNavigate();
   return (
     <div class="flex flex-col justify-center    w-full">
       <h1 class="text-center text-white text-2xl font-semibold pt-2"> Projects </h1>

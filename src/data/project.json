@@ -13,6 +13,13 @@
       "github": "https://github.com/kampouse/study-hack",
       "website": "https://study-hack.vercel.app/",
       "image": "./hack&learn.png"
+    },
+    {
+      "name": "Study & Hack",
+      "description": "this a test",
+      "github": "https://github.com/kampouse/Kampouse",
+      "website": "https://jemartel.dev/",
+      "image": "./hello.gif"
     }
   ]
 }
