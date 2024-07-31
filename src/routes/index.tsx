@@ -1,10 +1,12 @@
 import { component$, $, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import data from "../data/project.json";
 import Blog from "~/components/blog";
 import Introduction from "~/components/introduction";
 import * as lucid from "lucide-qwik";
 import Projects from "~/components/Project";
+import type { Project } from "~/components/Project";
 export default component$(() => {
   const userName = useSignal("Jean-philippe martel");
   const setName = $(() => {
@@ -16,7 +18,7 @@ export default component$(() => {
       document.title = "jemartel ~ personal website";
     }
   });
-
+  const projects = data.projects as Array<Project>;
   return (
     <>
       <header class="flex flex-col items-center lg:justify-center lg:pt-20  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img    h-[8em] md:h-[20em] lg:h-[30em]     ">
@@ -45,7 +47,7 @@ export default component$(() => {
         <div class="flex flex-col w-full">
           <Introduction />
 
-          <Projects />
+          <Projects title="Projects" projects={projects} />
 
           <Blog />
         </div>

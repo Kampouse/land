@@ -1,0 +1,78 @@
+{
+  "projects": [
+    {
+      "name": "Good Palette",
+      "description": "A website for generating color palettes.",
+      "website": "https://goodpalette.io/",
+      "image": "https://s6.imgcdn.dev/bwfkh.png"
+    },
+    {
+      "name": "Tailwind Ink",
+      "description": "A tool for generating Tailwind CSS colors.",
+      "website": "https://tailwind.ink/",
+      "image": "https://s6.imgcdn.dev/bwtrV.png"
+    },
+    {
+      "name": "taildwind color converter",
+      "description": "A tool for converting Tailwind CSS colors.",
+      "website": "https://tailwindmate.jaleelbennett.com/",
+      "image": "https://s6.imgcdn.dev/bwWqK.png"
+    },
+
+    {
+      "name": "FFFuel",
+      "description": "fffuel is a collection of color tools.",
+      "website": "https://fffuel.co/",
+      "image": "https://s6.imgcdn.dev/bw3uo.png"
+    },
+    {
+      "name": "Refero Design",
+      "description": "A resource for design inspiration.",
+      "website": "https://refero.design/",
+      "image": "https://s6.imgcdn.dev/bwL1O.png"
+    },
+    {
+      "name": "UI Colors",
+      "description": "A tool for creating UI color schemes.",
+      "website": "https://uicolors.app/create",
+      "image": "https://s6.imgcdn.dev/bwqPv.png"
+    },
+    {
+      "name": "Design Resources",
+      "description": "A collection of design resources.",
+      "website": "https://designresourc.es/",
+      "image": "https://s6.imgcdn.dev/bwmhg.png"
+    },
+    {
+      "name": "Tailwind Generator",
+      "description": "A generator for Tailwind CSS components.",
+      "website": "https://tailwind-generator.com/generators",
+      "image": "https://s6.imgcdn.dev/bwH8q.png"
+    },
+    {
+      "name": "Uiverse",
+      "description": "a collection ui elements",
+      "website": "https://uiverse.io/",
+      "image": "https://s6.imgcdn.dev/bwgkB.png"
+    },
+    {
+      "name": "where to host my app",
+      "description": "A tool for finding the best hosting for your app.",
+      "website": "https://wheretohostmy.app/",
+      "image": "https://s6.imgcdn.dev/bwEvu.png"
+    },
+
+    {
+      "name": "Zed",
+      "description": "A Editor for the 21st century",
+      "website": "https://zed.dev/",
+      "image": "https://s6.imgcdn.dev/bw8qL.png"
+    },
+    {
+      "name": "ImageCDN",
+      "description": "A simple image hosting service",
+      "website": "https://imgcdn.dev/",
+      "image": "https://s6.imgcdn.dev/bwo4a.png"
+    }
+  ]
+}
