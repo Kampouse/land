@@ -1,5 +1,6 @@
 import { component$, $, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { Link } from "@builder.io/qwik-city";
 
 import data from "../data/project.json";
 import Blog from "~/components/blog";
@@ -7,6 +8,7 @@ import Introduction from "~/components/introduction";
 import * as lucid from "lucide-qwik";
 import Projects from "~/components/Project";
 import type { Project } from "~/components/Project";
+
 export default component$(() => {
   const userName = useSignal("Jean-philippe martel");
   const setName = $(() => {
@@ -47,9 +49,23 @@ export default component$(() => {
         <div class="flex flex-col w-full">
           <Introduction />
 
+          <div class="text-center  py-4 text-white hover:text-[#e6284b] hover:transition hover:ease-linear  hover:cursor-pointer  " >
+            <Link href="/tools">
+              <h1 class=" mt-2 pb-2  md:mt-0 flex-row gap-2
+              lg:pb-0 md:pb-0 text-white text-2xl underline decoration-4 decoration-[#e6284b]"> Tools
+                <lucid.SettingsIcon size={30} class="inline mx-2" />
+              </h1>
+              <p class="font-normal text-md "> collection of tools that I use regularly </p>
+            </Link>
+
+          </div>
+
+
+
           <Projects title="Projects" projects={projects} />
 
           <Blog />
+
         </div>
       </main>
     </>
