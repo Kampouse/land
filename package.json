@@ -28,8 +28,8 @@
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
-    "@builder.io/qwik": "^1.7.0",
-    "@builder.io/qwik-city": "^1.7.0",
+    "@builder.io/qwik": "^1.7.3",
+    "@builder.io/qwik-city": "^1.7.3",
     "@cloudflare/workers-types": "^4.20240419.0",
     "@types/eslint": "^8.56.2",
     "@types/node": "^20.11.6",
@@ -48,6 +48,7 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
+    "@unpic/qwik": "^0.0.46",
     "gray-matter": "^4.0.3",
     "lucide-qwik": "^1.0.0",
     "og-img": "^0.2.1",

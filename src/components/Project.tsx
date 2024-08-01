@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import * as Lucid from "lucide-qwik";
+import { Image } from '@unpic/qwik';
 import { Link } from "@builder.io/qwik-city";
 
 export type Project = {
@@ -40,7 +41,7 @@ const Project = component$<Project>((project) => {
         href={project.website}
         target="_blank"
       >
-        <img
+        <Image
           src={project.image}
           width={500}
           height={500}

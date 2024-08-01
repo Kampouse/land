@@ -6,7 +6,11 @@ import type { Project } from "~/components/Project";
 import data from "./tools.json";
 export default component$(() => {
   const project = data.projects as Array<Project>;
-  return <Projects title="tools <3" projects={project} />;
+  return (<div>
+
+    <Projects title="tools <3" projects={project} />
+
+  </div>);
 });
 
 export const head: DocumentHead = () => {
@@ -36,7 +40,7 @@ export const head: DocumentHead = () => {
       },
       {
         property: "og:description",
-        content: "jean-philippe martel collection of tools for developers",
+        content: "compiled list of tools for developers by jean-philippe martel for front-end devs",
       },
       {
         property: "og:title",
