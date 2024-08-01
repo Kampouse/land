@@ -7,19 +7,16 @@ import data from "./tools.json";
 import LandingButton from "~/components/landingButton";
 export default component$(() => {
   const project = data.projects as Array<Project>;
-  return (<div class=" gap-20" >
-
-    <Projects title="Tools <3" projects={project} />
-    <div class="w-full flex justify-center py-2 pb-32">
-      <LandingButton link="/" text="home  " target={true}>
-        <HomeIcon q:slot="icon" class="ml-2" size={20} />
-      </LandingButton>
-
-
+  return (
+    <div class=" gap-20">
+      <Projects title="Tools <3" projects={project} />
+      <div class="w-full flex justify-center py-2 pb-32">
+        <LandingButton link="/" text="home  " target={true}>
+          <HomeIcon q:slot="icon" class="ml-2" size={20} />
+        </LandingButton>
+      </div>
     </div>
-
-
-  </div>);
+  );
 });
 
 export const head: DocumentHead = () => {
@@ -28,8 +25,7 @@ export const head: DocumentHead = () => {
     meta: [
       {
         property: "og:image",
-        content:
-          "https://s6.imgcdn.dev/bI6Je.png",
+        content: "https://s6.imgcdn.dev/bI6Je.png",
       },
       {
         property: "og:image:width",
@@ -49,7 +45,8 @@ export const head: DocumentHead = () => {
       },
       {
         property: "og:description",
-        content: "compiled list of tools for developers by jean-philippe martel for front-end devs",
+        content:
+          "compiled list of tools for developers by jean-philippe martel for front-end devs",
       },
       {
         property: "og:title",

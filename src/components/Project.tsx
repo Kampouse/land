@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import * as Lucid from "lucide-qwik";
-import { Image } from '@unpic/qwik';
+import { Image } from "@unpic/qwik";
 import { Link } from "@builder.io/qwik-city";
 
 export type Project = {
@@ -17,8 +17,6 @@ export interface ProjectProps {
 
 const Project = component$<Project>((project) => {
   return (
-
-
     <div key={project.name} class="   lg:mx-0 mx-16  flex  flex-col ">
       <div class="flex flex-row gap-2 my-2 pb-2   justify-center content-center self-center">
         <h1 class="flex mt-2 pb-2 md:mt-0  flex-row gap-2 self-left lg:pb-0 md:pb-0 text-white text-2xl underline decoration-4 decoration-[#e6284b]  ">
@@ -70,7 +68,8 @@ export default component$<ProjectProps>((projects) => {
             description={project.description}
             github={project.github}
             website={project.website}
-            image={project.image} />
+            image={project.image}
+          />
         );
       })}
     </div>
