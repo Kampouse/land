@@ -89,7 +89,7 @@ export default component$<ProjectProps>((projects) => {
                 src={project.image}
                 width={500}
                 height={500}
-                class=" md:self-center md:scale-100 scale-125 lg:scale-100  rounded-xl rounded-b-none my-2 md:my-0 lg:my-0 md:w-[500px] md:h-[50vh] w-[17em] h-[22vh] lg:w-[720px] self-center   "
+                class=" md:self-center md:scale-100 scale-125 lg:scale-100  rounded-xl rounded-b-none my-2 md:my-0 lg:my-0 md:w-[500px] md:h-[25em]  w-[19em] h-[10em] lg:w-[720px] self-center   "
               />
               <h1 class="   rounded-md  text-center text-lg py-4 p md:py-2 px-8 lg:w-[31.5em] text-white self-center  mt-2  w-96">
                 {project.description}
