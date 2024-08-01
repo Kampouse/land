@@ -4,83 +4,81 @@
 @tailwind utilities;
 
 :root {
-  --accent: 136, 58, 234;
-  --accent-light: 224, 204, 250;
-  --accent-dark: 49, 10, 101;
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--accent)),
-    rgb(var(--accent-light)) 30%,
-    white 60%
-  );
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(45deg,
+            rgb(var(--accent)),
+            rgb(var(--accent-light)) 30%,
+            white 60%);
 }
 
 .customhr {
-  border: 0;
-  margin: 1.35em auto;
-  max-width: 100%;
-  background-position: 50%;
-  box-sizing: border-box;
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: system-ui, sans-serif;
-  background: #221539;
+    font-family: system-ui, sans-serif;
+    background: #221539;
 }
 
 code {
-  font-family:
-    Menlo,
-    Monaco,
-    Lucida Console,
-    Liberation Mono,
-    DejaVu Sans Mono,
-    Bitstream Vera Sans Mono,
-    Courier New,
-    monospace;
+    font-family:
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: relative;
 }
 
 .custom-img {
-  background-image: url("./media/cover.jpg");
+    background-image: url("https://s6.imgcdn.dev/bIICl.jpg");
 }
 
 .pacifico-regular {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .bio-Rhyme {
-  font-family: Cagliostro;
-  line-height: 0.97em;
+    font-family: Cagliostro;
+    line-height: 0.97em;
 }
 
 .typed-out {
-  overflow: hidden;
-  border-right: 0.15em solid rgb(241, 40, 43);
-  white-space: nowrap;
-  width: 0;
-  font-size: 1.2rem;
-  animation: typing 2s forwards;
+    overflow: hidden;
+    border-right: 0.15em solid rgb(241, 40, 43);
+    white-space: nowrap;
+    width: 0;
+    font-size: 1.2rem;
+    animation: typing 2s forwards;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-    font-size: 0.5em;
-    border-right: 0em solid rgb(241, 40, 43);
-  }
+    from {
+        width: 0;
+        font-size: 0.5em;
+        border-right: 0em solid rgb(241, 40, 43);
+    }
 
-  to {
-    width: 100%;
-    font-size: 1.1rem;
+    to {
+        width: 100%;
+        font-size: 1.1rem;
 
-    border-right: 0.5em solid rgb(241, 40, 43);
-  }
+        border-right: 0.5em solid rgb(241, 40, 43);
+    }
 }
