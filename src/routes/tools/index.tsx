@@ -16,19 +16,19 @@ export const head: DocumentHead = () => {
       {
         property: "og:image",
         content:
-          "https://images.nightcafe.studio/jobs/T03JXPhTw4IpyN8feyEL/T03JXPhTw4IpyN8feyEL--1--9v6v3_6.9444x-real-esrgan-animevideo-v3.jpg?tr=w-1600,c-at_max",
+          "https://s6.imgcdn.dev/bI6Je.png",
       },
       {
         property: "og:image:width",
-        content: "1600",
+        content: "1200",
       },
       {
         property: "og:image:height",
-        content: "900",
+        content: "630",
       },
       {
         property: "og:image:alt",
-        content: "jean-philippe martel personal website",
+        content: "jean-philippe martel  tools for developers",
       },
       {
         property: "og:site_name",
@@ -36,7 +36,7 @@ export const head: DocumentHead = () => {
       },
       {
         property: "og:description",
-        content: "jean-philippe martel personal website",
+        content: "jean-philippe martel collection of tools for developers",
       },
       {
         property: "og:title",
