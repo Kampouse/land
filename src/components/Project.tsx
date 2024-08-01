@@ -44,7 +44,7 @@ const Project = component$<Project>((project) => {
           src={project.image}
           width={500}
           height={500}
-          class=" md:self-center md:scale-100 scale-125 lg:scale-100  my-2 md:my-0 lg:my-0 md:w-[500px] md:h-[50vh] w-[17em] h-[22vh] lg:w-[720px] self-center   border rounded-xl"
+          class=" md:self-center md:scale-100  lg:scale-100  my-2 md:my-0 lg:my-0 md:w-[500px] md:h-[33rem] w-[17em] h-[14rem] lg:w-[720px] self-center   border rounded-xl"
         />
       </Link>
       <h1 class="  text-center text-lg py-2 md:py-2 px-8 lg:w-[31.5em] text-white self-center  mt-2  w-96">

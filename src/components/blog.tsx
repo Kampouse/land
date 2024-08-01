@@ -10,10 +10,9 @@ type BlogEntry = {
   link: string;
 };
 
-
 let blogEntries = [] as Array<BlogEntry>;
 const getBlogEntries = () => {
-  return data
+  return data;
 };
 blogEntries = getBlogEntries();
 export default component$(() => {

@@ -66,7 +66,7 @@ code {
   border-right: 0.15em solid rgb(241, 40, 43);
   white-space: nowrap;
   width: 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   animation: typing 2s forwards;
 }
 
@@ -79,7 +79,7 @@ code {
 
   to {
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 
     border-right: 0.5em solid rgb(241, 40, 43);
   }

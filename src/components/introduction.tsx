@@ -35,10 +35,7 @@ export default component$(() => {
             >
               <lucid.PhoneIcon q:slot="icon" class="inline ml-2" size={20} />
             </LandingLinks>
-            <LandingLinks
-              link="mailto:jp@jemartel.dev"
-              text="Mail Me"
-            >
+            <LandingLinks link="mailto:jp@jemartel.dev" text="Mail Me">
               <lucid.MailIcon q:slot="icon" class="inline ml-2" size={20} />
             </LandingLinks>
 

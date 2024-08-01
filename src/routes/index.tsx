@@ -49,23 +49,26 @@ export default component$(() => {
         <div class="flex flex-col w-full">
           <Introduction />
 
-          <div class="text-center  py-4 text-white hover:text-[#e6284b] hover:transition hover:ease-linear  hover:cursor-pointer  " >
+          <div class="text-center  py-4 text-white hover:text-[#e6284b] hover:transition hover:ease-linear  hover:cursor-pointer  ">
             <Link href="/tools">
-              <h1 class=" mt-2 pb-2  md:mt-0 flex-row gap-2
-              lg:pb-0 md:pb-0 text-white text-2xl underline decoration-4 decoration-[#e6284b]"> Tools
+              <h1
+                class=" mt-2 pb-2  md:mt-0 flex-row gap-2
+              lg:pb-0 md:pb-0 text-white text-2xl underline decoration-4 decoration-[#e6284b]"
+              >
+                {" "}
+                Tools
                 <lucid.SettingsIcon size={30} class="inline mx-2" />
               </h1>
-              <p class="font-normal text-md "> collection of tools that I use regularly </p>
+              <p class="font-normal text-md ">
+                {" "}
+                collection of tools that I use regularly{" "}
+              </p>
             </Link>
-
           </div>
-
-
 
           <Projects title="Projects" projects={projects} />
 
           <Blog />
-
         </div>
       </main>
     </>
