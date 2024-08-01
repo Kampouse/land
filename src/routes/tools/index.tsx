@@ -1,14 +1,23 @@
 import { type DocumentHead } from "@builder.io/qwik-city";
 import { component$ } from "@builder.io/qwik";
-
+import { HomeIcon } from "lucide-qwik";
 import Projects from "~/components/Project";
 import type { Project } from "~/components/Project";
 import data from "./tools.json";
+import LandingButton from "~/components/landingButton";
 export default component$(() => {
   const project = data.projects as Array<Project>;
-  return (<div>
+  return (<div class=" gap-20" >
 
-    <Projects title="tools <3" projects={project} />
+    <Projects title="Tools <3" projects={project} />
+    <div class="w-full flex justify-center py-2 pb-32">
+      <LandingButton link="/" text="home  " target={true}>
+        <HomeIcon q:slot="icon" class="ml-2" size={20} />
+      </LandingButton>
+
+
+    </div>
+
 
   </div>);
 });
