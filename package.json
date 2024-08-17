@@ -53,7 +53,7 @@
     "lucide-qwik": "^1.0.0",
     "og-img": "^0.2.1",
     "path": "^0.12.7",
-    "posthog-js": "^1.154.0",
+    "posthog-js": "latest",
     "vite-plugin-fs": "^1.1.0"
   }
 }
