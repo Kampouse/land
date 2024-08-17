@@ -42,10 +42,9 @@ const Project = component$<Project>((project) => {
         target="_blank"
       >
         <Image
-          onerror="this.src='/src/media/cover.jpg'"
           src={project.image}
-          w
 
+          onerror="this.src='/cover.jpg'"
           class=" md:self-center md:scale-100 scale-125 lg:scale-100  rounded-xl rounded-b-none my-2 md:my-0 lg:my-0   self-center   "
 
         />
