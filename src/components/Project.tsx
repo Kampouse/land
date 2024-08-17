@@ -42,8 +42,12 @@ const Project = component$<Project>((project) => {
         target="_blank"
       >
         <Image
+          onerror="this.src='/src/media/cover.jpg'"
           src={project.image}
+          w
+
           class=" md:self-center md:scale-100 scale-125 lg:scale-100  rounded-xl rounded-b-none my-2 md:my-0 lg:my-0   self-center   "
+
         />
         <h1 class="   rounded-md  text-center text-lg py-4 p md:py-2 px-8 lg:w-[31.5em] text-white self-center  mt-2  w-96">
           {project.description}
