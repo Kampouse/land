@@ -23,7 +23,7 @@ export default component$(() => {
   const projects = data.projects as Array<Project>;
   return (
     <>
-      <header class="flex flex-col items-center lg:justify-center lg:pt-20  bg-fixed   bg-top  bg-contain bg-no-repeat   custom-img    h-[8em] md:h-[20em] lg:h-[30em]     ">
+      <header class="flex flex-col items-center lg:justify-center lg:pt-20  bg-fixed   bg-top  bg-contain bg-no-repeat bg-[url('/cover.jpg')]      h-[8em] md:h-[20em] lg:h-[30em]     ">
         <div class="m-8 lg:m-0      " onClick$={setName}>
           <div class=" font-bold lg:p-8 px-8 py-2  from-zinc-50 to-gray-800  text-white bg-[#221539]  opacity-[65%] rounded-xl cursor-pointer flex  text-center flex-col justify-center ">
             {userName.value == "jemartel" ? (
