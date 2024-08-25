@@ -19,6 +19,37 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
   });
 };
 
+export const useProjectLoader = routeLoader$(() => {
+  return (
+
+    {
+      "projects": [
+        {
+          "name": "Study & Hack",
+          "description": "learn on the go with others; still  in  active development!  Aimed to make a platform where people can study  and 'hack' together!",
+          "github": "https://github.com/kampouse/study-hack",
+          "website": "https://study-hack.vercel.app/",
+          "image": "https://github.com/Kampouse/Kampouse/blob/main/media/study-hack.png?raw=true"
+        },
+        {
+          "name": "Coffee Now",
+          "description": "E-commerce website for coffee lovers!  Aimed to make landing page with a selection of coffee products with a cart and checkout functionality!",
+          "github": "https://github.com/kampouse/coffee",
+          "website": "https://coffee-plum-two.vercel.app/",
+          "image": "https://github.com/Kampouse/Kampouse/blob/main/media/coffee.jpeg?raw=true"
+        }
+      ]
+    }
+  );
+});
+export type Project = {
+  name: string;
+  description: string;
+  github: string;
+  website: string;
+  image: string;
+}
+
 export const useServerTimeLoader = routeLoader$(() => {
   return {
     date: new Date().toISOString(),
