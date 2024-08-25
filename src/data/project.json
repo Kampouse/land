@@ -5,14 +5,14 @@
       "description": "learn on the go with others; still  in  active development!  Aimed to make a platform where people can study  and 'hack' together!",
       "github": "https://github.com/kampouse/study-hack",
       "website": "https://study-hack.vercel.app/",
-      "image": "src/media/study-hack.png"
+      "image": "src/routes/study-hack.png"
     },
     {
       "name": "Coffee Now",
       "description": "E-commerce website for coffee lovers!  Aimed to make landing page with a selection of coffee products with a cart and checkout functionality!",
       "github": "https://github.com/kampouse/coffee",
       "website": "https://coffee-plum-two.vercel.app/",
-      "image": "src/media/coffee.jpeg"
+      "image": "src/routes/coffee.jpeg"
     }
   ]
 }
